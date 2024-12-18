@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "spartan", sans-serif;
+    }
+    
+    h1{
+    font-size: 50px;
+    line-height: 1;
+    color: rgb(245, 243, 240);
+    }
+    
+    h2{
+        font-size: 46px;
+        line-height: 1;
+        color: rgb(245, 243, 240);
+    }
+    
+    h4{
+        font-size: 20px;
+        line-height: 1;
+        color: rgb(245, 243, 240);
+    }
+    
+    h6{
+        font-size: 17px;
+        font-weight: 700;
+        color: black;
+    }
+    
+    p{
+        font-size: 16px;
+        color: whitesmoke;
+        margin: 15px 0 20px 0;
+    }
+    
+    body{
+        width: 100%;
+        color: whitesmoke;
+    }
+    
+    /**********Header**********/
+    
+    #header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 80px;
+        background-color: #e8dff0;
+        box-shadow: 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        position: sticky;
+        top: 0;
+        left: 0;
+    }
+    #navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #navbar li{
+        list-style: none;
+        padding: 10px 18px;
+        position: relative;
+        
+    }
+    #navbar li a,
+    #navbar li a.active {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #1a1a1a;
+    transition: 0.3s ease;
+    }
+    #navbar li a:hover,
+    #navbar li a.active {
+        color: purple;
+    }
+    #navbar li a.active::after,
+    #navbar li a:hover::after{
+        content: " ";
+        width: 39px;
+        height: 3px;
+        background-color: plum;
+        position: absolute;
+        bottom: -1px;
+        left: 19px;
+    }
+    /**********Home Page******/
+    #hero{
+    background-image: url(image/bg3.jpeg);
+    position: relative;
+    height: 50vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 50% right 0;
+    padding: 0 15px;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content: center;
+    background-repeat: no-repeat;
+    }
+
+    #hero h1{
+        padding-top:  30px;
+        padding-bottom: 10px;  
+    }
+
+    #hero h4{
+        padding-top:  30px;
+        padding-bottom: 10px;  
+    }
+    
+    #hero p{
+        color:black;
+        font-weight: 900;
+    }
+    
+    
+    /*************About***********/
+    #abouttab{
+        background-image: url(image/bg2.jpg);
+        padding-top: 25px;
+        text-align: center;
+        position: relative;
+        height: 80vh;
+        width: 100%;
+        background-size: cover;
+        background-position: top 50% right 0;
+        padding: 0 15px;
+        background-repeat: no-repeat;
+        
+        
+    }
+    
+    #abouttab h2{
+        color: black;
+        text-decoration:underline;
+        text-decoration-color: purple;
+        padding-top: 25px;
+    
+    }
+
+    #abouttab p{
+        color: black;
+    } 
+
+    #abouttab img{
+        border: #3a057b;
+        border-radius: 100px;
+        border: 1px solid #e4dddd;
+    box-shadow: 20px 20px 35px rgba(0, 0, 0, 0.3);
+    } 
+
+
+/*************List Projects***********/
+    #project h2{
+     padding-top: 17px;
+     color: #1a1a1a;
+     text-align: center;
+     text-decoration: underline;
+     text-decoration-color: purple;
+    }
+
+    #project p{
+        padding-top: 17px;
+        text-align: center;
+        color: black;
+        font-weight: 700;
+       }
+
+    
+       #project .Newitem {
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        flex-wrap: wrap;
+    }
+    
+    #project .New1 {
+        width: 30%;
+        min-width: 250px;
+        padding: 20px 20px;
+        border: 1px solid #f9f5f9;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.08);
+        margin: 18px 5px;
+        position: relative;
+    }
+    
+    #project .New1 img {
+        width: 100%;
+        border-radius: 10%;
+    }
+    
+    #project .New1 .description {
+        text-align: start;
+        padding: 10px 0;
+    
+    }
+    
+    #project .New1 .description span {
+        color: #7e1f7d;
+        font-size: 12px;
+    }
+    
+    #project .New1 .description h5{
+    color: purple;
+    font-size: 14px;
+    padding-top: 7px;
+    }
+    #project .New1 .description p {
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.5);
+        text-align:left;
+        }
+    
+    /**********Contact*************/
+    #con form{
+        display: grid;
+        align-content:center;
+        font-display:inherit;
+        padding-top: 2px;
+    }
+
+    #con form label{
+        color: #1a1a1a;
+        padding:8px 20px 8px 20px;
+        font-weight: 700;
+    }
+
+    #name{ 
+        width: 200px;
+        height: 30px;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-left: 1%;
+        border-color: rgba(0, 0, 0, 0.12);
+    }
+    #email{ 
+        width: 200px;
+        height: 30px;
+        padding: 10px;
+        margin-bottom: 20px;
+        margin-left: 1%;
+        border-color: rgba(0, 0, 0, 0.12);
+    }
+
+    #text{ 
+        width: 50px;
+        height: 70px;
+        padding: 30px 20px 30px 20px;
+        margin-left: 1%;
+        border-color: rgba(0, 0, 0, 0.12);
+    }
+
+
+    #con form button{
+            background-color: purple;
+            color: white;
+            border-radius: 5px;
+            border: 1px;
+            cursor: pointer;
+            font-size: 15px;
+            font-weight: 700;
+            padding: 8px 20px 8px 20px;
+            margin: 20px;
+            width: 10%;
+            align-items: center;
+        
+        }
+        
+        #con button:hover{
+            background-color: whitesmoke;
+            color: purple;
+            display: block;
+        }
+        
+
+       /**************Footer***********/
+       #fo {
+        background-image: url(image/footer2.jpg);
+        background-size: cover;
+        background-position: center;
+                
+       }
+
+       .fo-1 footer{
+        display: flex;
+        justify-content:flex-start;
+        flex-wrap: wrap;
+        padding: 50px 50px;
+       }
+
+       .fo-1 footer p{
+        margin-left: 0.1%;
