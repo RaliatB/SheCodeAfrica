@@ -274,8 +274,8 @@
     }
 
     #project .New1:hover {
-        transform: scale(1.05); /* Slight zoom effect on hover */
-        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Enhance shadow on hover */
+        transform: scale(1.05); 
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
     }
     
     #project .New1 {
